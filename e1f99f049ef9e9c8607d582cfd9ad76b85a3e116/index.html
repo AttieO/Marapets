@@ -266,7 +266,14 @@ Please select a pet that you would like to train in the <a href="http://www.mara
   ga('send', 'pageview');
 
 </script>
-
+<script>
+var cat = document.getElementById("cat"),
+    cat_gif = "hyper.html";
+	
+cat.onclick = function() {
+    cat.src = cat_gif;
+}	
+</script>	
 <script>
 var bird = document.getElementById('bird'),
     bird_gif = 'Physe out of Ball.gif';
@@ -275,7 +282,7 @@ bird.onclick = function() {
     bird.src = bird_gif;
     setTimeout(
             function() {
-               bird.src = "Physe.gif";
+               bird.src = cat_gif;
             },
             1500);
 }
