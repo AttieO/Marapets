@@ -225,7 +225,7 @@ Please select a pet that you would like to train in the <a href="http://www.mara
 <font size="+1">Maldrithor</font><br></td></tr>
 <tr>
 <td align="center" valign="top"><!---<a href="gym.php?do=dogym&amp;id="7256030">---><img src="http://images.marapets.com/pets/Kidlet_radioactive.gif" border="0"></a>
-<font size="+1">Meloh</font><br></td><td align="center" valign="top"><a id="Link"><input type="submit" value="Go" /></a><img id="bird" src="pokeball3.gif" height="140px" width="202px" border="0"></a>
+<font size="+1">Meloh</font><br></td><td align="center" valign="top"><a><img id="bird" src="pokeball3.gif" height="140px" width="202px" border="0"></a>
 <font size="+1">Physe</font><br><i>Finished in 45 minutes</i></td><td align="center" valign="top"><!---<a href="gym.php?do=dogym&amp;id="7256030">---><img src="http://images.marapets.com/pets/Doyle_ice.gif" border="0"></a>
 <font size="+1">Pippier</font><br></td><td align="center" valign="top"><!---<a href="gym.php?do=dogym&amp;id="7256030">---><img src="http://images.marapets.com/pets/Ideus_black.gif" border="0"></a>
 <font size="+1">Rin03</font><br></td></tr>
@@ -268,6 +268,13 @@ Please select a pet that you would like to train in the <a href="http://www.mara
 </script>
 
 <script>
+
+var cat = document.getElementById("cat")
+    cat_gif = "hyper.html";
+	
+cat.onclick = function() {
+    cat.src = cat_gif;
+
 var bird = document.getElementById('bird'),
     bird_gif = 'Physe out of Ball.gif';
 
@@ -275,9 +282,7 @@ bird.onclick = function() {
     bird.src = bird_gif;
     setTimeout(
             function() {
-               bird.src = "Physe.gif";
-	       var Link = "http://www.marapets.com/gym.php?do=dogym&id=7256030";
-               document.getElementById('someLink').href = Link;
+               bird.src = cat_gif;
             },
             1500);
 }
