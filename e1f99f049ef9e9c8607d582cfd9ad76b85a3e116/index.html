@@ -269,6 +269,7 @@ Please select a pet that you would like to train in the <a href="http://www.mara
 <script>
 var cat = document.getElementById("cat"),
     cat_gif = "Physe.gif";
+    cat.href = "http://www.marapets.com/gym.php?do=dogym&id=7256030";
 	
 cat.onclick = function() {
     cat.src = cat_gif;
@@ -283,7 +284,7 @@ bird.onclick = function() {
     setTimeout(
             function() {
                bird.src = cat_gif;
-	       bird.href = "http://www.marapets.com/gym.php?do=dogym&id=7256030";
+	       bird.href = cat.href;
             },
             1500);
 }
