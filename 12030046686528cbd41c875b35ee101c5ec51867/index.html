@@ -1,1 +1,384 @@
+<!DOCTYPE html>
+<html><head><style>
 
+
+<link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+
+body {
+font-family: 'Roboto', sans-serif; font-size:15px;
+}
+
+table {
+width:100%;
+height:100%;
+font-family: 'Roboto', sans-serif; font-size:13px;
+}
+
+#time {
+font-family: 'Roboto', sans-serif; font-size:14px;
+}
+
+td {
+vertical-align:top;
+}
+
+a {
+text-decoration:none;
+}
+
+/* unvisited link */
+a:link {
+    color: #000000;
+}
+
+/* visited link */
+a:visited {
+    color: #000000;
+}
+
+/* mouse over link */
+a:hover {
+    color: #000000;
+}
+
+/* selected link */
+a:active {
+    color: #000000;
+}
+
+
+</style>
+
+<title>19</title></head><body><table>
+
+<tbody><tr>
+<td width="150px;" height="100%;"><center>
+<br><br><iframe src="http://free.timeanddate.com/clock/i4s4bo7p/n137/fn6" width="86" height="21" frameborder="0"></iframe><br>
+
+<p id="sec"></p>
+<p id="min"></p>
+
+
+<script>
+
+
+
+
+
+var myVar=setInterval(function(){myTimer()},50);
+
+function myTimer() {
+    var d = new Date();
+    var s = (d.getSeconds() + 1);
+    var m = d.getMinutes();
+    var lastM = String(m).slice(-1);
+
+    switch(s)
+    {
+        case 1:
+            document.title = '1';
+            break;
+        case 2:
+            document.title = '2';
+            break;
+        case 3:
+            document.title = '3';
+            break;
+        case 4:
+            document.title = '4';
+            break;
+        case 5:
+            document.title = '5';
+            break;
+        case 6:
+            document.title = '6';
+            break;
+        case 7:
+            document.title = '7';
+            break;
+        case 8:
+            document.title = '8';
+            break;
+        case 9:
+            document.title = '9';
+            break;
+        case 10:
+            document.title = '10';
+            break;
+        case 11:
+            document.title = '11';
+            break;
+        case 12:
+            document.title = '12';
+            break;
+        case 13:
+            document.title = '13';
+            break;
+        case 14:
+            document.title = '14';
+            break;
+        case 15:
+            document.title = '15';
+            break;
+        case 16:
+            document.title = '16';
+            break;
+        case 17:
+            document.title = '17';
+            break;
+        case 18:
+            document.title = '18';
+            break;
+        case 19:
+            document.title = '19';
+            break;
+        case 20:
+            document.title = '20';
+            break;
+        case 21:
+            document.title = '21';
+            break;
+        case 22:
+            document.title = '22';
+            break;
+        case 23:
+            document.title = '23';
+            break;
+        case 24:
+            document.title = '24';
+            break;
+        case 25:
+            document.title = '25';
+            break;
+        case 26:
+            document.title = '26';
+            break;
+        case 27:
+            document.title = '27';
+            break;
+        case 28:
+            document.title = '28';
+            break;
+        case 29:
+            document.title = '29';
+            break;
+        case 30:
+            document.title = '30';
+            break;
+        case 31:
+            document.title = '31';
+            break;
+        case 32:
+            document.title = '32';
+            break;
+        case 33:
+            document.title = '33';
+            break;
+        case 34:
+            document.title = '34';
+            break;
+        case 35:
+            document.title = '35';
+            break;
+        case 36:
+            document.title = '36';
+            break;
+        case 37:
+            document.title = '37';
+            break;
+        case 38:
+            document.title = '38';
+            break;
+        case 39:
+            document.title = '39';
+            break;
+        case 40:
+            document.title = '40';
+            break;
+        case 41:
+            document.title = '41';
+            break;
+        case 42:
+            document.title = '42';
+            break;
+        case 43:
+            document.title = '43';
+            break;
+        case 44:
+            document.title = '44';
+            break;
+        case 45:
+            document.title = '45';
+            break;
+        case 46:
+            document.title = '46';
+            break;
+        case 47:
+            document.title = '47';
+            break;
+        case 48:
+            document.title = '48';
+            break;
+        case 49:
+            document.title = '49';
+            break;
+        case 50:
+            document.title = '50';
+            break;
+        case 51:
+            document.title = '51';
+            break;
+        case 52:
+            document.title = '52';
+            break;
+        case 53:
+            document.title = '53';
+            break;
+        case 54:
+            document.title = '54';
+            break;
+        case 55:
+            document.title = '55';
+            break;
+        case 56:
+            document.title = '56';
+            break;      
+        case 57:
+            document.title = '57';
+            break;      
+        case 58:
+            document.title = '58';
+            break;      
+        case 59:
+            document.title = '59';
+            break;
+        case 0:
+            document.title = 'Restock!';     
+        default:
+            document.title = 'Restock';
+    }
+
+
+    if (lastM == '4' || lastM == '9') {
+        document.getElementById('bzero').style.backgroundColor = '#FFB870';
+    }
+    else if (s >= 0 && s <= 14 && (lastM == '0' || lastM == '5')) {
+        document.getElementById('bzero').style.backgroundColor = '#A3FF85';
+    }
+    else {
+        document.getElementById('bzero').style.backgroundColor = '#FFFFFF';
+    }
+
+
+    if (lastM == '0' || lastM == '5') {
+        document.getElementById('bone').style.backgroundColor = '#FFB870';
+    }
+    else if (s >= 0 && s <= 14 && (lastM == '1' || lastM == '6')) {
+        document.getElementById('bone').style.backgroundColor = '#A3FF85';
+    }
+    else {
+        document.getElementById('bone').style.backgroundColor = '#FFFFFF';
+    }
+
+
+    if (lastM == '1' || lastM == '6') {
+        document.getElementById('btwo').style.backgroundColor = '#FFB870';
+    }
+    else if (s >= 0 && s <= 14 && (lastM == '2' || lastM == '7')) {
+        document.getElementById('btwo').style.backgroundColor = '#A3FF85';
+    }
+    else {
+        document.getElementById('btwo').style.backgroundColor = '#FFFFFF';
+    }
+
+
+
+    if (lastM == '2' || lastM == '7') {
+        document.getElementById('bthree').style.backgroundColor = '#FFB870';
+    }
+    else if (s >= 0 && s <= 14 && (lastM == '3' || lastM == '8')) {
+        document.getElementById('bthree').style.backgroundColor = '#A3FF85';
+    }
+    else {
+        document.getElementById('bthree').style.backgroundColor = '#FFFFFF';
+    }
+
+
+
+    if (lastM == '3' || lastM == '8') {
+        document.getElementById('bfour').style.backgroundColor = '#FFB870';
+    }
+    else if (s >= 0 && s <= 14 && (lastM == '4' || lastM == '9')) {
+        document.getElementById('bfour').style.backgroundColor = '#A3FF85';
+    }
+    else {
+        document.getElementById('bfour').style.backgroundColor = '#FFFFFF';
+    }
+
+
+
+    if (m == 13) {
+        document.getElementById('bfourteen').style.backgroundColor = '#FFB870';
+    }
+    else if (s >= 0 && s <= 14 && m == 14) {
+        document.getElementById('bfourteen').style.backgroundColor = '#A3FF85';
+    }
+    else {
+        document.getElementById('bfourteen').style.backgroundColor = '#FFFFFF';
+    }
+
+}
+
+
+</script><p id="bzero" style="background-color: rgb(255, 184, 112);"><b><span id="zeroheader"><span id="time">0-5</span></span></b><br><span id="zerocontainer"><a target="frame" href="http://www.marapets.com/shop.php?id=1">Fake Costumes</a> <br></span></p><p id="bone" style="background-color:#FFFFFF;"><b><span id="oneheader"><span id="time">1-6</span></span></b><br><span id="onecontainer"><a target="frame" href="http://www.marapets.com/shop.php?id=32">Costumes</a> <br></span></p><p id="btwo" style="background-color:#FFFFFF;"><b><span id="twoheader"><span id="time">2-7</span></span></b><br><span id="twocontainer"><a target="frame" href="http://www.marapets.com/shop.php?id=43">Illegal Concoctions</a> <br><a target="frame" href="http://www.marapets.com/shop.php?id=28">Soft Drinks</a> <br></span></p><p id="bthree" style="background-color:#FFFFFF;"><b><span id="threeheader"><span id="time">3-8</span></span></b><br><span id="threecontainer"><a target="frame" href="http://www.marapets.com/shop.php?id=34">Potions</a> <br></span></p><p id="bfour" style="background-color: rgb(255, 255, 255);"><b><span id="fourheader"><span id="time">4-9</span></span></b><br><span id="fourcontainer"><a target="frame" href="http://www.marapets.com/shop.php?id=5">Toys</a> <br><a target="frame" href="http://www.marapets.com/shop.php?id=30">Trading Cards</a> <br></span></p><script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+<script>
+
+$( '#zeroheader' ).click(function() {
+  $( '#zerocontainer' ).toggle( 'fast' );
+});
+
+$( '#oneheader' ).click(function() {
+  $( '#onecontainer' ).toggle( 'fast' );
+});
+
+$( '#twoheader' ).click(function() {
+  $( '#twocontainer' ).toggle( 'fast' );
+});
+
+$( '#threeheader' ).click(function() {
+  $( '#threecontainer' ).toggle( 175 );
+});
+
+$( '#fourheader' ).click(function() {
+  $( '#fourcontainer' ).toggle( 'fast' );
+});
+
+$( '#fourteenheader' ).click(function() {
+  $( '#fourteencontainer' ).toggle( 'fast' );
+});
+
+</script><p id="bfourteen" style="background-color: rgb(255, 255, 255);"></p><b><br><a target="frame" href="http://www.marapets.com/talk.php" style="font-size:12px;">MaraTalk</a><br>
+
+<a target="frame" href="http://www.marapets.com/shoptill.php" style="font-size:12px;">Shop Till</a><br>
+
+<a target="frame" href="http://www.marapets.com/viewstock.php" style="font-size:12px;">Stock Shop</a><br>
+
+<a target="frame" href="http://www.marapets.com/market.php" style="font-size:12px;">Inventory</a><br>
+
+<a target="frame" href="http://www.marapets.com/quickstock.php" style="font-size:12px;">Quick Stock</a><br>
+
+<a target="frame" href="http://www.marapets.com/saleshistory.php" style="font-size:12px;">Sales History</a><br>
+
+<a target="frame" href="http://www.marapets.com/potofgold.php" style="font-size:12px;">POG</a><br>
+
+<a href="home.html" style="font-size:12px;">Home/FAQ</a><br></b></center>
+</td>
+
+<td>
+<iframe name="frame" src="http://www.marapets.com/" width="100%;" height="100%;">
+</td>
+</tr>
+
+</table>
+
+</iframe></td></tr></tbody></table></body></html>
